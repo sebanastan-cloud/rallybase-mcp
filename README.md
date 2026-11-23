@@ -5,9 +5,9 @@ Rallybase is a remote MCP server for US public government records. It lets an AI
 - **Endpoint:** `https://rallybase.org/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1, authorization code with PKCE. Sign in at rallybase.org/connect with a free Rallybase account and press Allow.
 - **Docs:** https://rallybase.org/api/docs
-- **Listed in:** the Claude connectors directory
+- **Listed in:** the Claude connectors directory, LobeHub, the Official MCP Registry and Agensi (as a skill)
 
-## Tools (12, all read-only)
+## Tools (16, all read-only)
 | Tool | What it returns |
 |---|---|
 | `get_state_officials` | A state's U.S. senators and representatives, statewide officials, and legislators by chamber and district, with office phone, email and website |
@@ -22,6 +22,10 @@ Rallybase is a remote MCP server for US public government records. It lets an AI
 | `get_finance` | A county's, city's, school district's or state's revenue and spending, from the U.S. Census Bureau |
 | `search_nonprofits` | Tax-exempt organisations in the IRS file, by EIN or by name in a state |
 | `search_federal_register` | Recent Federal Register documents with agencies, comment deadlines and official-text links |
+| `get_tax_rates` | Texas property tax rates for the taxing units in a county, or one unit, as the Texas Comptroller prints them |
+| `get_county_labor_force` | A county's monthly labor force, employment and unemployment, from the Bureau of Labor Statistics |
+| `search_water_systems` | Community water systems serving a county or state, or one system by EPA id, from EPA records |
+| `search_federal_judges` | Federal judges by district court or state, from the Federal Judicial Center |
 
 ## How it answers
 - Each row carries its source and the day it was read or recorded.
